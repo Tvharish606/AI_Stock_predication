@@ -104,7 +104,7 @@ public class Ai_Stock_predication_module
 		Actions A=new Actions(driver);
         A.moveToElement(AI_stock.Stock_selection).doubleClick().sendKeys("AAPL").perform();
 		
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		
 		
 		
