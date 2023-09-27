@@ -32,22 +32,17 @@ public class Ai_Stock_predication_module
 			TakesScreenshot ts=(TakesScreenshot)driver;
 			byte[] Src = ts.getScreenshotAs(OutputType.BYTES);
 			scenario.attach(Src,"Image.png","Screenshot");
-			
 		}
 	}
-	
-
 	@Given("user open the browser and enter the URL")
 	public void user_open_the_browser_and_enter_the_url() throws InterruptedException 
 	{
-		
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().to("http://localhost:8501/");
 		Thread.sleep(8000);
 	}
-
 	@Then("User able to see the AI_Stock_predication module page")
 	public void user_able_to_see_the_ai_stock_predication_module_page() {
 		if (driver.getPageSource().contains("Forecasting Time Series Data - Stock Price")) 

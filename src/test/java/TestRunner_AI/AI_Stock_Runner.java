@@ -1,5 +1,7 @@
 package TestRunner_AI;
 
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
 import io.cucumber.junit.Cucumber;
@@ -12,5 +14,5 @@ import io.cucumber.junit.CucumberOptions;
 					plugin = {"pretty","html:test-output"})
 public class AI_Stock_Runner
 {
-	
+
 }
